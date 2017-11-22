@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 
 
@@ -20,6 +21,8 @@ namespace BinaryTranslator
         /// Code By Benjamin Gray
         /// </summary>
 
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -27,11 +30,16 @@ namespace BinaryTranslator
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             var VerNum = "v0.0.3a";
             lblVerNum.Text = VerNum;
+            
         }
 
-       
+        private void btn_engtobin_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 
 
@@ -43,7 +51,7 @@ namespace BinaryTranslator
         public string EngString = string.Empty;
         public string binString = string.Empty;
 
-        Dictionary<char, string> translateBin = new Dictionary<char, string>
+       public Dictionary<char, string> translateBin = new Dictionary<char, string>
         {
             {'a', "01100001" },
             {'b', "01100010" },
@@ -73,13 +81,6 @@ namespace BinaryTranslator
             {'z', "01111010" },
             
         };
-
-
-
-
-
-
-
     }
 }
 

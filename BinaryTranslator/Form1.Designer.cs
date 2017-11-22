@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnTranstoBin = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_engtobin = new System.Windows.Forms.Button();
+            this.btn_bintoeng = new System.Windows.Forms.Button();
             this.lbl_englishInput = new System.Windows.Forms.Label();
             this.lbl_binInput = new System.Windows.Forms.Label();
             this.rtb_binText = new System.Windows.Forms.RichTextBox();
@@ -37,23 +37,24 @@
             this.lblVerNum = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnTranstoBin
+            // btn_engtobin
             // 
-            this.btnTranstoBin.Location = new System.Drawing.Point(460, 113);
-            this.btnTranstoBin.Name = "btnTranstoBin";
-            this.btnTranstoBin.Size = new System.Drawing.Size(118, 36);
-            this.btnTranstoBin.TabIndex = 0;
-            this.btnTranstoBin.Text = "English --> Binary";
-            this.btnTranstoBin.UseVisualStyleBackColor = true;
+            this.btn_engtobin.Location = new System.Drawing.Point(460, 113);
+            this.btn_engtobin.Name = "btn_engtobin";
+            this.btn_engtobin.Size = new System.Drawing.Size(118, 36);
+            this.btn_engtobin.TabIndex = 0;
+            this.btn_engtobin.Text = "English --> Binary";
+            this.btn_engtobin.UseVisualStyleBackColor = true;
+            this.btn_engtobin.Click += new System.EventHandler(this.btn_engtobin_Click);
             // 
-            // button2
+            // btn_bintoeng
             // 
-            this.button2.Location = new System.Drawing.Point(460, 305);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 35);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Binary --> English";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_bintoeng.Location = new System.Drawing.Point(460, 305);
+            this.btn_bintoeng.Name = "btn_bintoeng";
+            this.btn_bintoeng.Size = new System.Drawing.Size(117, 35);
+            this.btn_bintoeng.TabIndex = 1;
+            this.btn_bintoeng.Text = "Binary --> English";
+            this.btn_bintoeng.UseVisualStyleBackColor = true;
             // 
             // lbl_englishInput
             // 
@@ -111,8 +112,8 @@
             this.Controls.Add(this.rtb_binText);
             this.Controls.Add(this.lbl_binInput);
             this.Controls.Add(this.lbl_englishInput);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnTranstoBin);
+            this.Controls.Add(this.btn_bintoeng);
+            this.Controls.Add(this.btn_engtobin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "English to Binary";
@@ -124,8 +125,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnTranstoBin;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_engtobin;
+        private System.Windows.Forms.Button btn_bintoeng;
         private System.Windows.Forms.Label lbl_englishInput;
         private System.Windows.Forms.Label lbl_binInput;
         private System.Windows.Forms.RichTextBox rtb_binText;
