@@ -39,7 +39,7 @@
             // 
             // btnTranstoBin
             // 
-            this.btnTranstoBin.Location = new System.Drawing.Point(531, 116);
+            this.btnTranstoBin.Location = new System.Drawing.Point(460, 113);
             this.btnTranstoBin.Name = "btnTranstoBin";
             this.btnTranstoBin.Size = new System.Drawing.Size(118, 36);
             this.btnTranstoBin.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(531, 311);
+            this.button2.Location = new System.Drawing.Point(460, 305);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(117, 35);
             this.button2.TabIndex = 1;
@@ -75,17 +75,19 @@
             // 
             // rtb_binText
             // 
-            this.rtb_binText.Location = new System.Drawing.Point(20, 221);
+            this.rtb_binText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtb_binText.Location = new System.Drawing.Point(15, 221);
             this.rtb_binText.Name = "rtb_binText";
-            this.rtb_binText.Size = new System.Drawing.Size(562, 82);
+            this.rtb_binText.Size = new System.Drawing.Size(562, 69);
             this.rtb_binText.TabIndex = 4;
             this.rtb_binText.Text = "";
             // 
             // rtbEngText
             // 
+            this.rtbEngText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbEngText.Location = new System.Drawing.Point(23, 28);
             this.rtbEngText.Name = "rtbEngText";
-            this.rtbEngText.Size = new System.Drawing.Size(554, 82);
+            this.rtbEngText.Size = new System.Drawing.Size(554, 70);
             this.rtbEngText.TabIndex = 5;
             this.rtbEngText.Text = "";
             // 
@@ -102,8 +104,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(661, 367);
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(622, 367);
             this.Controls.Add(this.lblVerNum);
             this.Controls.Add(this.rtbEngText);
             this.Controls.Add(this.rtb_binText);
